@@ -288,6 +288,116 @@ button#toggleMap:hover {
 
 
 
+.widget--content {
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corretamente verticalmente */
+	}
+	
+	.widget--content button {
+	margin-bottom: 8px; /* Espaçamento entre os botões */
+	padding: 10px 98px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 12px;
+	color: #ce8d00f1;
+	background: #e7c681;
+	font-weight: bold; /* Define o texto como negrito */
+	font-weight: 700; /* Um valor comum para negrito */
+	border-color: #dbb35d;
+	}
+	
+	.container--btn{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corretamente verticalmente */  
+	}
+	
+	/*=================================================================================*/
+	
+	.content--btn-cadastro{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corr*/
+	
+	}
+	
+	.btn--cadastro button {
+	margin-bottom: 8px; /* Espaçamento entre os botões */
+	padding: 10px 83px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 12px;
+	color: #ce8d00f1;
+	background: #e7c681;
+	font-weight: bold; /* Define o texto como negrito */
+	font-weight: 700; /* Um valor comum para negrito */
+	border-color: #dbb35d;
+	}
+	
+	.btn--cadastro{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corretamente verticalmente */  
+	}
+	
+	
+	/*==================menu==================================================*/
+	
+	.btn-menu-btn{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corr*/
+	
+	}
+	
+	.menu-bnt button{
+	margin-bottom: 8px; /* Espaçamento entre os botões */
+	padding: 10px 100px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 12px;
+	color: #ce8d00f1;
+	background: #e7c681;
+	font-weight: bold; /* Define o texto como negrito */
+	font-weight: 700; /* Um valor comum para negrito */
+	border-color: #dbb35d;
+	
+	}
+	
+	.menu-bnt{
+	display: flex;
+	flex-direction: column;
+	align-items: center; /* Alinha os botões à direita */
+	position: center; /* Mantém os botões na lateral enquanto a página é rolada */
+	top: 50%; /* Centraliza verticalmente */
+	right: 10px; /* Ajusta a posição para a lateral direita */
+	transform: translateY(5%); /* Centraliza corretamente verticalmente */  
+	
+	}
+
+
+
 
 
 
@@ -1354,6 +1464,39 @@ blockquot {
 
 
 
+
+
+
+
+/* Esconde o botão em telas grandes */
+.hamburger-btn {
+    display: none;
+}
+
+/* Exibe o botão em telas móveis (max-width 768px é um valor comum para dispositivos móveis) */
+@media only screen and (max-width: 768px) {
+    .hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 27px;
+        height: 19px;
+        background: none;
+        border: none;
+        cursor: pointer;
+		padding: top;
+		margin-right: 1px;
+		
+		
+       
+    }
+
+    .hamburger-btn .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #dbad67; /* Cor das barrinhas */
+    }
+}
 
 
 
@@ -3557,7 +3700,7 @@ table tbody tr td {
 	display: none;
 }
 
-.module .module-icon {
+.module .module-icon .hamburger-btn {
     margin-right: -30px;
     cursor: pointer;
     line-height: 105px;
@@ -3579,15 +3722,51 @@ table tbody tr td {
 
 }
 
+
+
+
+
+
+
+
+/* Estilos para telas maiores (computadores e tablets) */
+.module-icon.search-icon {
+    display: inline-block; /* Exibe o ícone em linha com outros elementos */
+    font-size: 24px; /* Tamanho padrão do ícone para telas maiores */
+    padding: 31px; /* Adiciona um espaçamento ao redor do ícone */
+    cursor: pointer; /* Mostra um cursor de "mão" ao passar sobre o ícone */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao redimensionar ou interagir */
+}
+
+.module-icon.search-icon:hover {
+    transform: scale(1.1); /* Aumenta o ícone quando o cursor passa sobre ele */
+}
+
+/* Estilos para dispositivos móveis (telas com largura máxima de 768px) */
+@media only screen and (max-width: 768px) {
+    .module-icon.search-icon {
+        font-size: 20px; /* Reduz o tamanho do ícone para telas menores */
+        padding: 1px; /* Ajusta o espaçamento para manter proporções agradáveis */
+    }
+}
+
+
+
+
+
+
+
+
 .module .module-icon i {
 	font-size: 19px;
-	line-height: 24px;
+	
 	color: #dbad67;
 	font-weight: 400;
 }
 
 .module .menu-icon-double i {
 	margin-left: 30px;
+	margin-right: 50px;
 	transform: translateY(-6px);
 }
 
@@ -4018,7 +4197,7 @@ table tbody tr td {
 	margin-left: 0; /* Removi o margin-left */
 	cursor: pointer;
 	transition: all 0.3s ease-in-out; /* Transição suave para hover */
-	margin-right: 10px;
+	margin-right: 1px;
 }
 
 .module-reservation .btn-popup:hover {
@@ -4385,9 +4564,9 @@ table tbody tr td {
 	
 	width: 36px;
 	height: 36px;
-	line-height: 36px;
+	line-height: 10px;
 	text-align: center;
-	margin-right: 5px;
+	margin-right: 6px;
 	transform: translateY(-6px);
 }
 
@@ -6123,7 +6302,7 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 }
 
 .hamburger-panel {
-	padding: 20px;
+	padding: 5px;
 }
 
 .hamburger-panel .list-links a {
@@ -9100,7 +9279,7 @@ td.cart-product-quantity {
 }
 
 .widget .widget--title h5 {
-	font-size: 20px;
+	font-size: 26px;
 	font-weight: 400;
 	line-height: 1;
 	text-transform: capitalize;
