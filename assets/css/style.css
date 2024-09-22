@@ -159,6 +159,11 @@ textarea {
 body,
 html {
 	overflow-x: hidden;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 html {
@@ -1940,6 +1945,7 @@ blockquot {
 	
 	color: #ce8d00f1;
 	border: 2px solid #dbb35d;
+	background: #f9e3b0;
 }
 
 
