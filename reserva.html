@@ -1,99 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
-    <link href="http://fonts.googleapis.com/css?family=Great+Vibes%7CKaushan+Script%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Great+Vibes%7CKaushan+Script%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" type="text/css">
-
-    <!-- Stylesheets
-    ============================================= -->
-    <link href="assets/css/external.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- RS5.0 Main Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="assets/revolution/css/settings.css">
-    <link rel="stylesheet" type="text/css" href="assets/revolution/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="assets/revolution/css/navigation.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Reserva - GGauchos</title>
-</head>
-<body>
-    <header>
-        <h1>GGaúchos - Reserva de Mesa</h1>
-        
-    </header>
-   
-
-    <div class="overlay">
-        <div class="container">
-            <h2><i class="fas fa-utensils"></i> Faça sua Reserva</h2>
-            <form id="reservation-form" >
-                <div class="form-group" style="color: #c5a86b;">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name"  required placeholder="Nome Completo">
-                </div>
-                <div class="form-group"  style="color: #c5a86b;">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email"  required placeholder="E-mail">
-                </div>
-                <div class="form-group"  style="color: #c5a86b;">
-                    <label for="phone">Número de Celular:</label>
-                    <input type="tel" id="phone" required placeholder="Celular">
-                </div>
-                <div class="form-group"  style="color: #c5a86b;">
-                    <label for="date">Data:</label>
-                    <input  id="date"  required placeholder="dd/mm/aa">
-                </div>
-                <div class="form-group"  style="color: #c5a86b;">
-                    <label for="time">Hora:</label>
-                    <input  id="time" required placeholder="--:--">
-                </div>
-                <div class="form-group"  style="color: #c5a86b;">
-                    <label for="people"  style="color: #c5a86b;">Número de pessoas:</label>
-                    <input type="number" id="people" min="1" required>
-                </div>
-                <button type="submit"><i class="fas fa-paper-plane" href="index.html"></i> Reservar</button>
-                <div id="confirmation-message" class="hidden"></div>
-                <div class="btn--voltar">
-                    <div class="btn">
-                        <a href="index.html"><button>Voltar</button></a>
-            
-                    </div>
-                </div>
-            </form>
-        </div>
-        
-        
-    </div>
-    
-
-    <footer>
-        <p style="color: #5a451d;">&copy; 2024 GGauchos. Todos os direitos reservados para você.</p>
-    </footer>
-    
-    <script src="script.js"></script>
-</body>
-</html>
-
 
 
 <style>
 
 
 
-
-/* Estilo para o container do botão "Voltar" */
 /* Estilo para o container do botão "Voltar" */
 .btn--voltar {
     position: fixed; /* Fixa o botão em relação à janela de visualização */
-    padding: 0; /* Distância da parte inferior da tela */
+    bottom: 4px; /* Distância da parte inferior da tela */
     left: 50%; /* Centraliza em relação ao eixo horizontal */
     transform: translateX(-50%); /* Ajusta o botão para que fique centralizado */
     display: none; /* Inicialmente oculto */
@@ -103,10 +17,11 @@
 .btn button {
     background: transparent; /* Fundo transparente */
     color: white; /* Cor do texto do botão */
-    border: none; /* Remove borda padrão do botão */
-    font-size: 16px; /* Tamanho da fonte */
+  
+    font-size: 12px; /* Tamanho da fonte menor */
     cursor: pointer; /* Cursor muda para indicar que é clicável */
-    border-color: #333;
+    padding: 3px 8px; /* Menos espaço interno */
+    border-radius: 5px; /* Arredonda os cantos */
 }
 
 /* Remover efeito de hover */
@@ -121,24 +36,6 @@
         display: block; /* Mostra o botão */
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -328,3 +225,165 @@ function validateEmail(email) {
 }
 
 </script>
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Great+Vibes%7CKaushan+Script%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" type="text/css">
+
+
+
+    
+
+    <link href="http://fonts.googleapis.com/css?family=Great+Vibes%7CKaushan+Script%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Great+Vibes%7CKaushan+Script%7CRaleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" type="text/css">
+
+    <!-- Stylesheets
+    ============================================= -->
+    <link href="assets/css/external.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- RS5.0 Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="assets/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/revolution/css/navigation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Reserva - GGauchos</title>
+    <style>
+        /* Seu CSS aqui... */
+
+        /* Estilo para o container do botão "Voltar" */
+        .btn--voltar {
+            position: fixed; /* Fixa o botão em relação à janela de visualização */
+            bottom: 4px; /* Distância da parte inferior da tela */
+            left: 50%; /* Centraliza em relação ao eixo horizontal */
+            transform: translateX(-50%); /* Ajusta o botão para que fique centralizado */
+            display: none; /* Inicialmente oculto */
+        }
+
+        /* Estilo para o botão */
+        .btn button {
+            background: transparent; /* Fundo transparente */
+            color: white; /* Cor do texto do botão */
+            font-size: 12px; /* Tamanho da fonte menor */
+            cursor: pointer; /* Cursor muda para indicar que é clicável */
+            padding: 3px 8px; /* Menos espaço interno */
+            border-radius: 5px; /* Arredonda os cantos */
+        }
+
+        /* Remover efeito de hover */
+        .btn button:hover {
+            background: transparent; /* Mantém fundo transparente ao passar o mouse */
+            color: white; /* Mantém a cor do texto ao passar o mouse */
+        }
+
+        /* Exibir o botão apenas em dispositivos móveis */
+        @media (max-width: 768px) {
+            .btn--voltar {
+                display: block; /* Mostra o botão */
+            }
+        }
+
+        /* Seu CSS existente aqui... */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GGaúchos - Reserva de Mesa</h1>
+    </header>
+
+    <div class="overlay">
+        <div class="container">
+            <h2><i class="fas fa-utensils"></i> Faça sua Reserva</h2>
+            <form id="reservation-form">
+                <!-- Campos do formulário -->
+                <div class="form-group" style="color: #c5a86b;">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" required placeholder="Nome Completo">
+                </div>
+                <div class="form-group" style="color: #c5a86b;">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required placeholder="E-mail">
+                </div>
+                <div class="form-group" style="color: #c5a86b;">
+                    <label for="phone">Número de Celular:</label>
+                    <input type="tel" id="phone" required placeholder="Celular">
+                </div>
+                <div class="form-group" style="color: #c5a86b;">
+                    <label for="date">Data:</label>
+                    <input id="date" required placeholder="dd/mm/aa">
+                </div>
+                <div class="form-group" style="color: #c5a86b;">
+                    <label for="time">Hora:</label>
+                    <input id="time" required placeholder="--:--">
+                </div>
+                <div class="form-group" style="color: #c5a86b;">
+                    <label for="people">Número de pessoas:</label>
+                    <input type="number" id="people" min="1" required>
+                </div>
+                <button type="submit"><i class="fas fa-paper-plane"></i> Reservar</button>
+                <div id="confirmation-message" class="hidden"></div>
+            </form>
+            <div class="btn--voltar">
+                <div class="btn">
+                    <a href="index.html"><button>Voltar</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p style="color: #5a451d;">&copy; 2024 GGauchos. Todos os direitos reservados para você.</p>
+    </footer>
+
+    <script>
+        document.getElementById('reservation-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const people = document.getElementById('people').value;
+
+            if (!validateEmail(email)) {
+                alert('Por favor, insira um e-mail válido.');
+                return;
+            }
+
+            const confirmationMessage = `
+                Reserva feita com sucesso! 
+                Nome: ${name} 
+                E-mail: ${email} 
+                Data: ${date} 
+                Hora: ${time} 
+                Número de pessoas: ${people}`;
+
+            const messageElement = document.getElementById('confirmation-message');
+            messageElement.textContent = confirmationMessage;
+            messageElement.classList.remove('hidden');
+            messageElement.style.opacity = '0';
+            setTimeout(() => {
+                messageElement.style.opacity = '1';
+                document.querySelector('.btn--voltar').style.display = 'block'; // Exibe o botão "Voltar"
+            }, 50);
+
+            document.getElementById('reservation-form').reset();
+        });
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+</body>
+</html>
