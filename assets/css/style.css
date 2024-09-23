@@ -293,6 +293,10 @@ button#toggleMap:hover {
 
 
 
+
+
+
+
 .widget--content {
 	display: flex;
 	flex-direction: column;
@@ -3559,12 +3563,28 @@ table tbody tr td {
 }
 }
 
+
+
 /*------------------------------------*\
     #HEADER
 \*------------------------------------*/
+
+
 .header {
 	height: 100px;
+	
 }
+
+
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo desejada */
+    transition: background-color 0.3s ease; /* Animação suave */
+}
+
+
+
+
 
 .header-transparent {
 	background-color: transparent;
@@ -4674,6 +4694,88 @@ table tbody tr td {
 /*------------------------------------*\
     #Menu
 \*------------------------------------*/
+
+
+.header-bordered .navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.header-bordered .navbar.affix {
+    border-bottom: none;
+}
+
+.header-bordered .navbar.navbar--dark {
+    border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+}
+
+.header-bordered .navbar.scrolled {
+    border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+/* Estilo do ícone */
+ion-icon {
+    font-size: 33px;
+    line-height: 24px;
+    color: #dbad67;
+    display: none; /* Esconde o ícone por padrão */
+}
+
+/* Mostra o ícone apenas em dispositivos móveis */
+@media (max-width: 768px) {
+    ion-icon {
+        display: inline-block; /* Exibe o ícone apenas em telas menores */
+    }
+}
+
+/* Estilos para o hover */
+ion-icon:hover {
+    color: #ce8d00f1;
+}
+
+/* Linha horizontal personalizada */
+.custom-line {
+    border: none;
+    height: 2px;
+    background-color: rgb(145, 102, 45);
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header {
 	position: relative;
 }
@@ -4695,7 +4797,11 @@ table tbody tr td {
 	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
 	-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+	
 }
+
+
+
 
 .header-bordered .navbar.affix {
 	border-bottom: none;
@@ -4779,7 +4885,7 @@ table tbody tr td {
 	margin-left: -10px;
 	width: 0;
 	height: 2px;
-	background: transparent;
+	background: red;
 	content: '';
 	-webkit-transition: all 0.4s;
 	-moz-transition: all 0.4s;
