@@ -318,6 +318,7 @@ button#toggleMap:hover {
 	font-weight: bold; /* Define o texto como negrito */
 	font-weight: 700; /* Um valor comum para negrito */
 	border-color: #dbb35d;
+	border: none;
 	}
 	
 	.container--btn{
@@ -391,6 +392,7 @@ button#toggleMap:hover {
 	font-weight: bold; /* Define o texto como negrito */
 	font-weight: 700; /* Um valor comum para negrito */
 	border-color: #dbb35d;
+	border: none;
 	
 	}
 	
@@ -4697,6 +4699,7 @@ table tbody tr td {
 
 
 .header-bordered .navbar {
+	background-color: #f9e3b0ea;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
 }
@@ -4710,6 +4713,7 @@ table tbody tr td {
 }
 
 .header-bordered .navbar.scrolled {
+	
     border-bottom: 1px solid rgba(34, 34, 34, 0.5);
     background-color: rgba(255, 255, 255, 0.9);
     transition: all 0.3s ease;
@@ -6485,6 +6489,10 @@ li.dropdown-submenu > ul.dropdown-menu > li.has-dropdown > ul.dropdown-menu.left
 	line-height: 27px;
 	padding-bottom: 10px;
 }
+
+
+
+
 
 /* Slider Small */
 .slider-small {

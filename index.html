@@ -99,7 +99,7 @@
                 
             </button>
             <a class="logo" href="index.html">
-                <img class="logo-light" src="assets/menu/teste1.png" alt="granny Logo">
+                <img class="logo-light" src="assets/imgprincipal/logopreta.png" alt="granny Logo">
                 <img class="logo-dark" src="assets/imgprincipal/logopreta.png" alt="granny Logo">
             </a>
         </div>
@@ -270,6 +270,7 @@ background: #e7c681;
 font-weight: bold; /* Define o texto como negrito */
 font-weight: 700; /* Um valor comum para negrito */
 border-color: #dbb35d;
+border: none;
 }
 
 .btn--cadastro{
@@ -370,106 +371,8 @@ transform: translateY(5%); /* Centraliza corretamente verticalmente */
 
 
 <div class="module module-reservation">
-    <a class="btn-popup" data-toggle="modal" style="border-radius: 7px;" data-target="#reservationModule"><i class="lnr lnr-users"></i>reservar</a>
-    <div class="modal fade reservation-popup" tabindex="-1" role="dialog" id="reservationModule">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
-                    <div class="row reservation">
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <div class="reservation-form mb-30 bg-white text-center">
-                                <form method="post" action="assets/php/reservation.php" class="reservationForm mb-0">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-4">
-                                            <div class="form-select">
-                                                <i class="fa fa-angle-down"></i>
-                                                <select class="form-control" name="res-pepole" id="resPepole">
-											<option value="2">2 pessoas</option>
-											<option value="3">3 pessoas</option>
-											<option value="4">4 pessoas</option>
-											<option value="5">5 pessoas</option>
-											<option value="6">6 pessoas</option>
-											<option value="8">8 pessoas</option>
-											<option value="10">10 pessoas</option>
-										</select>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-4">
-                                            <div class="form-select">
-                                                <i class="fa fa-angle-down"></i>
-                                                <select class="form-control" name="res-day" id="resDay">
-											<option value="March 23">2 de janeiro 2025</option>
-											<option value="March 24">3 de janeiro 2025</option>
-											<option value="March 25">4 de janeiro 2025</option>
-											<option value="March 26">5 de janeiro 2025</option>
-											<option value="March 27">6 de janeiro 2025</option>
-										</select>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-4">
-                                            <div class="form-select">
-                                                <i class="fa fa-angle-down"></i>
-                                                <select class="form-control" name="res-time" id="resTime">
-											<option value="8:00">8:00</option>
-											<option value="9:00">9:00</option>
-											<option value="10:00">10:00</option>
-											<option value="11:00">11:00</option>
-											<option value="12:00">12:00</option>
-                                            <option value="8:00">13:00</option>
-											<option value="9:00">14:00</option>
-											<option value="10:00">15:00</option>
-											<option value="11:00">16:00</option>
-											<option value="12:00">17:00</option>
-                                            <option value="12:00">18:00</option>
-                                            <option value="8:00">19:00</option>
-											<option value="9:00">20:00</option>
-											<option value="10:00">21:00</option>
-											<option value="11:00">22:00</option>
-											<option value="12:00">23:00</option>
-										</select>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-4">
-                                            <input type="text" class="form-control" name="res-name" id="resName" style="color: rgb(179, 109, 6);" placeholder="Nome Completo" required >
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-4" >
-                                            <input type="email" class="form-control" name="res-email" id="resEmail" style="color: rgb(179, 109, 6);"  placeholder="Digite seu Email" required>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <input type="text" class="form-control"  name="res-phone" id="resNumber" style="color: rgb(179, 109, 6);" placeholder="Celular | Telefone" required>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-12">
-                                            <textarea class="form-control" name="res-message" id="resMessage" rows="2" style="color: rgb(179, 109, 6);" placeholder="Adicione um pedido especial (opcional)."></textarea>
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-12" >
-                                            <input type="submit" style="color: rgb(179, 109, 6);" value="Confirmar"  name="res-submit"  class="btn btn--secondary btn--block">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-12 col-md-12">
-												<!--Alert Message-->
-                            					<div class="reservation-result"></div>
-											</div>
-                                    </div>
-                                    <!-- .row end -->
-                                </form>
-                                <!-- form end -->
-                            </div>
-                            <!-- .contact-form end -->
-                        </div>
-                        <!-- .col-md-8 end -->
-                        <div class="col-xs-12 col-sm-12 col-md-12">
-                            <div class="text-uppercase text-center">
-                                <strong><span class="text-white">RESERVA ALIMENTADA POR </span> <a class="reservation-link" href="#">Opentable</a></strong>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- .row end -->
-                </div>
-            </div>
-            <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog -->
-    </div>
+    <a class="btn-popup" style="border-radius: 7px;" href="reserva.html">reservar</a>
+    
     <!-- /.modal -->
 </div>
 
@@ -602,9 +505,9 @@ transform: translateY(5%); /* Centraliza corretamente verticalmente */
 						data-splitin="none" 
 						data-splitout="none" 
 						data-responsive_offset="on">
-						<div class="slide--bio text-center"><br><br><br>GGaúcho's Churrascaria é um restaurante, com as melhores qualidades e váriedades de pratos típicos da região sul,<br> temos os pratos típicos mais incríveis e os chefes mais talentosos da cidade! </div>
+						<div class="slide--bio text-center" ><br><br><br>GGaúcho's Churrascaria é um restaurante, com as melhores qualidades e váriedades de pratos típicos da região sul,<br> temos os pratos típicos mais incríveis e os chefes mais talentosos da cidade! </div>
 					</div>
-					
+
 					<!-- LAYER NR. 3 -->
 					<div class="tp-caption" 
 						data-x="center" data-hoffset="0" 
@@ -692,6 +595,8 @@ transform: translateY(5%); /* Centraliza corretamente verticalmente */
 		</div>
 		<!-- END REVOLUTION SLIDER -->
 	</div>
+
+    
 
 
 
