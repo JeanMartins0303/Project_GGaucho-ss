@@ -354,7 +354,7 @@ button#toggleMap:hover {
 	background: #e7c681;
 	font-weight: bold; /* Define o texto como negrito */
 	font-weight: 700; /* Um valor comum para negrito */
-	border-color: #dbb35d;
+	border:none;
 	}
 	
 	.btn--cadastro{
